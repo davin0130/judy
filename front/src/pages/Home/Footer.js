@@ -4,7 +4,6 @@ const Footer = () => {
 
     return (
     <>
-        <div className='footer'>
             서울시 강동구 둔촌동 <br />
             이용약관 <br />
             개인정보 처리방침 <br />
@@ -12,7 +11,6 @@ const Footer = () => {
 
             Name : Dabin Jeong <br />
             Email : davin0130@naver.com <br />
-        </div>
     </>
     )
 }

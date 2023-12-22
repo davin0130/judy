@@ -5,14 +5,12 @@ const Header = () => {
 
     return (
     <>
-        <div className='header'>
             <div className='logo'>
                 <Link to="/">Home</Link>
             </div>
             <div className='navbar'>
                 <Link to="/intro">Introduce</Link>
             </div>
-        </div>
     </>
     )
 }

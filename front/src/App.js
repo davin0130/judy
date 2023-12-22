@@ -15,12 +15,14 @@ function App() {
   return (
     <div className="App">
       <Suspense fallback={(<div>...</div>)}>
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/intro" element={<Introduce />}></Route>
-        </Routes>
-        <Footer />
+        <div className='header'><Header /></div>
+        <div className="body">
+          <Routes>
+            <Route exact path="/" element={<Home />}></Route>
+            <Route exact path="/intro" element={<Introduce />}></Route>
+          </Routes>
+        </div>
+        <div className='footer'><Footer /></div>
       </Suspense>
     </div>
   );

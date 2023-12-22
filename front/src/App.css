@@ -1,8 +1,11 @@
 *{
   background-color: black;
   color: white;
-  width: 1920px;
-  margin: 0 auto;
-  font-size: 14px;
   line-height: 25px;
+  font-size: 14px;
+}
+.App{
+  width: 1250px;
+  margin: 0 auto;
+  border: 1px solid white;
 }
