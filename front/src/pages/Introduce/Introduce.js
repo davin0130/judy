@@ -15,7 +15,7 @@ const Introduce = () => {
             })
         }, [])
     return (
-    <>
+    <div className='intro'>
         {intro && intro.map((list) => (
             <div className='content career'>
                 <div className='title'>{list.title}
@@ -25,7 +25,7 @@ const Introduce = () => {
                 <div className='date'>{list.date}</div>
             </div>
         ))}
-    </>
+    </div>
     )
 }
 

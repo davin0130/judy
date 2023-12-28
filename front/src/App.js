@@ -9,7 +9,6 @@ import Introduce from './pages/Introduce/Introduce';
 
 
 import './App.css';
-import './style/Home/Home.css';
 
 function App() {
   return (

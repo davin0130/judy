@@ -1,22 +1,48 @@
-/* header========================================================== */
-.header{
-    padding: 20px;
-}
-.logo{
-
-}
-.navbar{
+.home-article{
+  margin: 20px 130px;
+  height: 150px;
 }
 
-/* body========================================================== */
-.body{
-  height: auto;
-  min-height: 100%;
-  padding-bottom: 150px;
+.count .content{
+  width: 300px;
 }
-/* footer========================================================== */
-.footer{
-    padding: 20px;
-    height: 150px;
-    position : relative;
+.count .count-title{
+  display: inline-block;
+  width: 70px;
+  padding: 5px;
+}
+.count .data{
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.skill .content{
+  display: inline-block;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+.skill .skill-title{
+  border: 0.5px solid #B19DEE;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: rgba(177, 157, 238, 0.2);
+  display: inline-block;
+}
+.skill .image{
+  display: inline-block;
+  margin: 5px;
+  line-height: 70px;
+}
+
+
+/* =========================== */
+.home .title{
+  font-size: 5em;
+  width: 800px;
+  border-top: 3px solid #663AEB;
+  border-bottom: 3px solid #663AEB;
+  margin: 0% 10%;
+  padding: 20px 0px;
 }

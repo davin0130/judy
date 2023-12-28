@@ -9,3 +9,31 @@
   margin: 0 auto;
   border: 1px solid white;
 }
+/* header========================================================== */
+.header{
+  padding: 20px;
+}
+.logo{
+
+}
+.r-navbar{
+  
+}
+.l-navbar{
+}
+
+/* body========================================================== */
+.body{
+height: auto;
+min-height: 100%;
+padding-bottom: 150px;
+}
+/* footer========================================================== */
+.footer{
+  padding: 20px;
+  height: 150px;
+  position : relative;
+}
+
+.f-purple-100{color: #663AEB;}
+.f-purple-50{color: #B19DEE;}

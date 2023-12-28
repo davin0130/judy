@@ -5,12 +5,12 @@ const Header = () => {
 
     return (
     <>
-            <div className='logo'>
-                <Link to="/">Home</Link>
-            </div>
-            <div className='navbar'>
-                <Link to="/intro">Introduce</Link>
-            </div>
+        <div className='logo'>
+            <Link to="/">Home</Link>
+        </div>
+        <div className='r-navbar'>
+            <Link to="/intro">Introduce</Link>
+        </div>
     </>
     )
 }
