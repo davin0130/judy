@@ -1,21 +1,57 @@
-.intro .content{
-    margin: 10px 100px;
-    padding: 20px;
+.main-banner {
+    height: 600px;
+    padding: 70px;
+    position: relative;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ), url("../../images/main_image.png");
+}
+.main-banner .name{
+    font-size: 2em;
+    margin-top: 300px;
+    line-height: 2em;
+    background-color: transparent;
+}
+.main-banner .title{
+    font-size: 5em;
+    line-height: 2em;
+    background-color: transparent;
+}
+.main-banner .list{
+    line-height: 2em;
+    background-color: transparent;
+}
+/* / */
+.category{
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 70px;
     border-bottom: 1px solid rgb(85, 85, 85);
+}
+.intro{
+    margin: 100px 0px;
+}
+.intro .content{
+    margin: 30px 100px;
+    padding: 20px;
+    /* border-bottom: 1px solid rgb(85, 85, 85); */
     position: relative;
 }
-.title{
+.intro .title{
     font-size: 16px;
-    line-height: 2em;
+    line-height: 2.5em;
 }
-.desc{
+.intro .desc{
 }
-.date{
-    width: 130px;
+.intro .date{
     position: absolute;
     top: 10px;
     right: 10px;
     text-align: center;
-    background-image: linear-gradient(165deg, rgb(56, 24, 85),rgb(114, 7, 185), rgb(56, 24, 85));
+    border: 0.5px solid #B19DEE;
     border-radius: 10px;
+    padding: 5px 10px;
+    background-color: rgba(177, 157, 238, 0.2);
 }
