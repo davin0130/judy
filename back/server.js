@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
 });
 
 require("./routes/introduce.js")(app);
+require("./routes/portfolio.js")(app);
 
 // set port, listen for requests
 app.listen(5000, () => {

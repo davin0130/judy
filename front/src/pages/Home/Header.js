@@ -10,7 +10,8 @@ const Header = () => {
         </div>
         <div className='r-navbar'>
             <Link to="/intro">Introduce</Link>
-        </div>
+            <Link to="/portfolio">Portfolio</Link>
+       </div>
     </>
     )
 }

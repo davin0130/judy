@@ -6,6 +6,7 @@ import Footer from './pages/Home/Footer';
 import Home from './pages/Home/Home';
 
 import Introduce from './pages/Introduce/Introduce';
+import Portfolio from './pages/Portfolio/Portfolio';
 
 
 import './App.css';
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/intro" element={<Introduce />}></Route>
+            <Route exact path="/portfolio" element={<Portfolio />}></Route>
           </Routes>
         </div>
         <div className='footer'><Footer /></div>
