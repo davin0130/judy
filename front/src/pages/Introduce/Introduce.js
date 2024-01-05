@@ -29,8 +29,7 @@ const Introduce = () => {
             <div className='category f-pink-50'><span>Career</span></div>
             {intro && intro.filter(list => list.category === "career").map((list) => (
                 <div className='content career'>
-                    <div className='title'>{list.title}
-                    </div>
+                    <div className='title'>{list.title}</div>
                     <div className='desc f-black-30'>{list.description}</div>
                     <div className='date f-purple-50'>{list.date}</div>
                 </div>
@@ -40,8 +39,7 @@ const Introduce = () => {
             <div className='category f-green-50'><span>Experience</span></div>
             {intro && intro.filter(list => list.category === "experience").map((list) => (
                 <div className='content'>
-                    <div className='title'>{list.title}
-                    </div>
+                    <div className='title'>{list.title}</div>
                     <div className='desc f-black-30'>{list.description}</div>
                     <div className='date f-purple-50'>{list.date}</div>
                 </div>
