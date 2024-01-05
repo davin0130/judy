@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import Count from '../../components/Count';
 import Skill from '../../components/Skills';
 
+import mainTitle from '../../images/product_manager_text.png';
 import '../../style/Home/Home.css';
 
 const Home = () => {
@@ -23,8 +24,8 @@ const Home = () => {
          <div className='home-article'>
             {article[showSomething]}
          </div>
-         <div className='title f-purple-50'>
-             Product Manage
+         <div className='title'>
+             <img src={mainTitle} />
         </div>
     </div>
     )
