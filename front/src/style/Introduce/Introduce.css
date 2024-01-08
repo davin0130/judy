@@ -1,10 +1,11 @@
 .main-banner {
+    margin-top: -100px;
     height: 600px;
     padding: 70px;
     position: relative;
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
       ), url("../../images/main_image.png");
 }
 .main-banner .name{
@@ -25,7 +26,7 @@
     line-height: 2em;
     background-color: transparent;
 }
-/* / */
+/* ======================================= */
 .category{
     margin: 70px;
     border-bottom: 1px solid rgb(85, 85, 85);
@@ -34,10 +35,6 @@
     line-height: 1.2em;
     font-size: 5em;
     font-weight: bold;
-    background: linear-gradient(to right, #007B83, #00F0FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px white;
 }
 .intro{
     margin: 100px 0px;
@@ -45,7 +42,6 @@
 .intro .content{
     margin: 10px 100px;
     padding: 20px;
-    /* border-bottom: 1px solid rgb(85, 85, 85); */
     position: relative;
 }
 .intro .title{
@@ -65,4 +61,57 @@
     border-radius: 10px;
     padding: 5px 10px;
     background-color: rgba(177, 157, 238, 0.2);
+}
+
+/* =============================== */
+.awards{
+    background-image: url("../../images/bg/intro_LA.png");
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.awards .content{
+    background-color: transparent;
+    padding: 10px;
+}
+.awards .category{
+    text-align: center;
+    border: none;
+    background-color: transparent;
+}
+.awards .category img{
+    margin: 0px 10px;
+    background-color: transparent;
+}
+.awards .dcategory{
+    display: inline;
+    background-color: transparent;
+}
+.awards .dcategory img{
+    margin: 13px 10px 0 0;
+    background-color: transparent;
+}
+.awards .title{
+    display: inline-block;
+    background-color: transparent;
+    width: 580px;
+    font-size: 1.2em;
+    margin: 5px;
+    vertical-align: top;
+}
+.awards .desc{
+    display: inline-block;
+    background-color: transparent;
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    vertical-align: top;
+}
+.awards .date{
+    display: inline;
+    position: relative;
+    border: none;
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+    vertical-align: top;
 }

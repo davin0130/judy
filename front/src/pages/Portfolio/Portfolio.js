@@ -24,9 +24,6 @@ const Portfolio = () => {
         <div>
             <div>
                 <div className='m-title'>Portfolio</div>
-                <div className='m-desc'>
-                    2018년도 대학생활 때부터 현재까지 약 6년간 쌓아온 포트폴리오 입니다.
-                </div>
             </div>
             {portfolio?.map((list) => (
                 <PCLink key={list.id} to={`/portfolio/${list.id}`}>

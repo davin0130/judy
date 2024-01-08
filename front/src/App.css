@@ -13,12 +13,19 @@
   padding: 20px;
 }
 .logo{
-
+  text-align: center;
 }
-.r-navbar{
-  
+.navbar{
+  text-align: right;
 }
-.l-navbar{
+.navbar .menu{
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+.navbar .menu:hover{
+  background-color: rgb(65, 65, 65);
+  transition: 0.2s;
 }
 
 /* body========================================================== */
@@ -53,3 +60,28 @@ padding-bottom: 150px;
 .f-purple-50{color: #B19DEE;}
 .f-purple-100{color: #663AEB;}
 .f-black-30{color: #B3B3B3;}
+
+.f-pink-linear{
+  background: linear-gradient(to right, #420A2D, #7E0A54);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px white;
+}
+.f-green-linear{
+  background: linear-gradient(to right, #007B83, #00F0FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px white;
+}
+.f-purple-linear{
+  background: linear-gradient(to right, #663AEB, #B19DEE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px white;
+}
+.f-yellow-linear{
+  background: linear-gradient(to right, #160D00, #FFC156);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px white;
+}
