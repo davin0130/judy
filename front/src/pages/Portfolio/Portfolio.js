@@ -28,6 +28,11 @@ const Portfolio = () => {
             {portfolio?.map((list) => (
                 <PCLink key={list.id} to={`/portfolio/${list.id}`}>
                     <div className='pcard'>
+                        {list.category ==="plan"
+                        ? <div className='pcategory l-purple-100'>{list.category}</div>
+                        : list.category === "dev"
+                        ? <div className='pcategory l-pink-100'>{list.category}</div>
+                        : <div className='pcategory l-yellow-100'>{list.category}</div>}
                         <div className='title'>{list.title}</div>
                         <div className='desc f-black-30'>{list.description}</div>
                         <div className='date f-purple-50'>{list.date}</div>                   

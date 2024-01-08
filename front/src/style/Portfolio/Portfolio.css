@@ -6,6 +6,12 @@
     display: inline-block;
     background-color: #353535;
 }
+.pcard .pcategory{
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 15px 0;
+    display: inline-block;
+}
 .pcard .title{
     font-size: 2em;
     line-height: 1.3em;

@@ -11,7 +11,8 @@ exports.create = (req, res) => {
 
   // Create a Portfolio
   const portfolio = new Portfolio({
-    id: req.body.category,
+    id: req.body.id,
+    category: req.body.category,
     title: req.body.title,
     description: req.body.description,
     date: req.body.date,

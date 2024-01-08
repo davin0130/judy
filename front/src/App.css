@@ -51,6 +51,8 @@ padding-bottom: 150px;
   position : relative;
 }
 
+
+/* font - color - percentage */
 .f-pink-50{color: #7E0A54;}
 .f-pink-100{color: #420A2D;}
 .f-green-50{color: #00F0FF;}
@@ -84,4 +86,17 @@ padding-bottom: 150px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.5px white;
+}
+
+/* label - color - percentage */
+.l-purple-100{background: #663AEB;}
+.l-blue-100{background: #7E0A54;}
+.l-blue-100{background: #7E0A54;}
+.l-pink-100{
+  background: #FFBAE5;
+  color: black;
+}
+.l-yellow-100{
+  background: #FFC156;
+  color: black;
 }

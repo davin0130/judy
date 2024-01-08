@@ -3,6 +3,7 @@ const sql = require("./db.js");
 // constructor
 const Portfolio = function(portfolio) {
   this.id = portfolio.id;
+  this.category = portfolio.category;
   this.title = portfolio.title;
   this.description = portfolio.description;
   this.date = portfolio.date;
@@ -59,8 +60,8 @@ Portfolio.getAll = result => {
 
 Portfolio.updateById = (id, result) => {
   sql.query(
-    "UPDATE portfolio SET title = ?, description = ?, date = ?, images = ?, skills = ?, responsibility = ?, result = ?, conclusion = ? WHERE id = ?",
-    [portfolio.title, portfolio.description, portfolio.date, portfolio.images, portfolio.skills, portfolio.responsibility, portfolio.result, portfolio.conclusion, id],
+    "UPDATE portfolio SET category = ?, title = ?, description = ?, date = ?, images = ?, skills = ?, responsibility = ?, result = ?, conclusion = ? WHERE id = ?",
+    [portfolio.category, portfolio.title, portfolio.description, portfolio.date, portfolio.images, portfolio.skills, portfolio.responsibility, portfolio.result, portfolio.conclusion, id],
     (err, res) => {
       if (err) {
         console.log("error: ", err);
