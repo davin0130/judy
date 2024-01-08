@@ -39,10 +39,36 @@
 
 /* =========================== */
 .home .title{
-  font-size: 5em;
   width: 800px;
   border-top: 3px solid #663AEB;
   border-bottom: 3px solid #663AEB;
   margin: 0 10%;
   padding: 50px 0px;
+}
+
+.home button{
+  border: none;
+  background-color: #663AEB;
+  display: block;
+  padding: 0 5px;
+  margin: 10px 0;
+  height: 50px;
+  text-align: left;
+}
+.home span{
+  display: none;
+}
+.home .show{
+  display: block;
+  background-color: #B19DEE;
+  width: 200px;
+  padding: 5px 20px;
+  margin: 10px 0px;
+  transition: 0.3s ease-in-out;
+}
+.home .showText{
+  display: block;
+  color: black;
+  transition: 0.5s ease-in-out;
+  background: transparent;
 }

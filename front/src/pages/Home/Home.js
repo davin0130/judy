@@ -8,6 +8,21 @@ import '../../style/Home/Home.css';
 
 const Home = () => {
     const [showSomething, setShowSomething] = useState('count');
+    const [isHoveringS, setIsHoveringS] = useState(false);
+    const [isHoveringC, setIsHoveringC] = useState(false);
+
+    const handleMouseOverS = () => {
+      setIsHoveringS(true);
+    };
+    const handleMouseOutS = () => {
+      setIsHoveringS(false);
+    };
+    const handleMouseOverC = () => {
+        setIsHoveringC(true);
+      };
+      const handleMouseOutC = () => {
+        setIsHoveringC(false);
+      };
 
     const article ={
         count: <Count />,
@@ -19,8 +34,21 @@ const Home = () => {
 
     return(
     <div className='home'>
-         <button onClick={showChangeHandler} value='count'>Experience & Career</button>
-         <button onClick={showChangeHandler} value='skill'>Skill</button>
+         <button
+            className={isHoveringS ? "show" : ""}
+            onMouseOver={handleMouseOverS} 
+            onMouseOut={handleMouseOutS}
+            onClick={showChangeHandler}
+            value='count'
+            ><span className={isHoveringS ? "showText" : ""}>Experience & Career</span>
+        </button>
+        <button
+            className={isHoveringC ? "show" : ""}
+            onMouseOver={handleMouseOverC} 
+            onMouseOut={handleMouseOutC}
+            onClick={showChangeHandler} 
+            value='skill'><span className={isHoveringC ? "showText" : ""}>Skills</span>
+        </button>
          <div className='home-article'>
             {article[showSomething]}
          </div>
