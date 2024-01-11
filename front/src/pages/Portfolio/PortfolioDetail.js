@@ -10,10 +10,9 @@ const PortfolioDetail = () => {
     useEffect(() => {
         Axios.get(`/portfolio/${params}`)
             .then(res => {
-                setPDetail(res.data)
+                setPDetail(res.data);
             })
     }, []);
-    
     return (
         <div className='pdetail'>
             <div className='title'>{pdetail?.title}</div>
@@ -25,7 +24,11 @@ const PortfolioDetail = () => {
                 <p className='content'>{pdetail?.date}</p>
             </div>
             <div className='images box'>
-                <p className='image'>{pdetail?.images}</p>
+                {/* {pdetail?.images.split(", ").map((image)=>{
+                    console.log(image);
+                    <img src={'/portfolio/' + image} />
+                })
+                } */}
             </div>
             <div className='skills box'>
                 <p className='name'>사용기술</p>
