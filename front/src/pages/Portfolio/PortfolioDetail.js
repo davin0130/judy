@@ -24,11 +24,13 @@ const PortfolioDetail = () => {
                 <p className='content'>{pdetail?.date}</p>
             </div>
             <div className='images box'>
-                {/* {pdetail?.images.split(", ").map((image)=>{
-                    console.log(image);
-                    <img src={'/portfolio/' + image} />
+                {pdetail?.images.split(", ").map((image)=>{
+                    return(
+                    <img
+                        className='image'
+                        src={`${process.env.PUBLIC_URL}/portfolio_image/${pdetail?.id}/${image}`} />)
                 })
-                } */}
+                }
             </div>
             <div className='skills box'>
                 <p className='name'>사용기술</p>

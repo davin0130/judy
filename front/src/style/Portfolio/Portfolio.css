@@ -52,3 +52,8 @@
     font-weight: bold;
     width: 150px;
 }
+
+.pdetail .image{
+    width: 350px;
+    margin: 10px;
+}
