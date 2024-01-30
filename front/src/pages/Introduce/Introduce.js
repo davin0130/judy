@@ -15,7 +15,6 @@ const Introduce = () => {
     useEffect(() => {
         Axios.get('/intro')
             .then(res => {
-                console.log(res.data);
                 setIntro(res.data)
             })
         }, [])

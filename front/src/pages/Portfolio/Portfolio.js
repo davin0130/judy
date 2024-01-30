@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Axios from 'axios';
 
 import styled from "styled-components";
-import '../../style/Portfolio/Portfolio.css'
+import '../../style/Portfolio/Portfolio.css';
 
 const PCLink = styled(Link)`
 	text-decoration: none;
@@ -15,7 +15,6 @@ const Portfolio = () => {
     useEffect(() => {
         Axios.get('/portfolio')
             .then(res => {
-                console.log(res.data);
                 setPortfolio(res.data)
             })
         }, []);
@@ -28,11 +27,11 @@ const Portfolio = () => {
             {portfolio?.map((list) => (
                 <PCLink key={list.id} to={`/portfolio/${list.id}`}>
                     <div className='pcard'>
-                        {list.category ==="plan"
-                        ? <div className='pcategory l-purple-100'>{list.category}</div>
-                        : list.category === "dev"
-                        ? <div className='pcategory l-pink-100'>{list.category}</div>
-                        : <div className='pcategory l-yellow-100'>{list.category}</div>}
+                        {list.id[0] ==="P"
+                        ? <div className='pcategory l-purple-100'>기획</div>
+                        : list.id[0] === "D"
+                        ? <div className='pcategory l-blue-100'>개발</div>
+                        : <div className='pcategory l-yellow-100'>운영</div>}
                         <div className='title'>{list.title}</div>
                         <div className='desc f-black-30'>{list.description}</div>
                         <div className='date f-purple-50'>{list.date}</div>                   

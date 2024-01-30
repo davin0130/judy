@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Axios from 'axios';
 
+import '../../style/Portfolio/Portfolio.css';
 
 const PortfolioDetail = () => {
     const params = useParams().id;
@@ -19,12 +20,21 @@ const PortfolioDetail = () => {
             <div className='desc f-purple-50'>
                 <p className='content'>{pdetail?.description}</p>
             </div>
+            <div className='box'>
+                {pdetail?.category.split(", ").map((item)=>{
+                    return(
+                        <div className='category l-purple-100'>{item}</div>
+                        )
+                })}
+            </div>
             <div className='date box'>
                 <p className='name'>수행기간</p>
                 <p className='content'>{pdetail?.date}</p>
             </div>
             <div className='images box'>
-                {pdetail?.images.split(", ").map((image)=>{
+                {pdetail?.images === null 
+                ? <div></div>
+                : pdetail?.images.split(", ").map((image)=>{
                     return(
                     <img
                         className='image'
@@ -34,7 +44,13 @@ const PortfolioDetail = () => {
             </div>
             <div className='skills box'>
                 <p className='name'>사용기술</p>
-                <p className='content'>{pdetail?.skills}</p>
+                {pdetail?.skills.split(", ").map((item)=>{
+                    return(
+                    <img
+                        className='simage'
+                        alt={item}
+                        src={`${process.env.PUBLIC_URL}/${item}.png`} />)
+                })}
             </div>
             <div className='responsibility box'>
                 <p className='name'>역할</p>
